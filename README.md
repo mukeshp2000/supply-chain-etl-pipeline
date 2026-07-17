@@ -20,8 +20,8 @@ Source:
 
 https://www.kaggle.com/datasets/anirudhbadampudi/supply-chain-logistics-dataset
 
-The raw dataset files are not included in this repository.
+The raw dataset files are not included in this repository
 
 Download the dataset and place the CSV files in:
 
-'data/raw/'
+`data/raw/`
