@@ -25,3 +25,9 @@ The raw dataset files are not included in this repository
 Download the dataset and place the CSV files in:
 
 `data/raw/`
+
+## Airflow DAG Execution
+
+The ETL pipeline is orchestrated with Apache Airflow and completed successfully.
+
+![Airflow DAG Success](screenshots/airflow_dag_success.png)
