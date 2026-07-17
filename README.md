@@ -73,12 +73,6 @@ Airflow Orchestration
 - Logging support
 - Modular Python architecture
 
-  ## Airflow DAG Execution
-
-The ETL pipeline is orchestrated using Apache Airflow and executes successfully through the DAG scheduler.
-
-![Airflow DAG Success](screenshots/airflow_dag_success.png)
-
 ## Future Improvements
 
 - Load cleaned data into PostgreSQL
