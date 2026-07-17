@@ -1,16 +1,18 @@
 # supply-chain-etl-pipeline
 An automated supply chain ETL pipeline using Python, PostgreSQL, Apache Airflow and Docker.
+
 ## Technologies Used
 
-- Python
-
-- PostgreSQL
-
-- Apache Airflow
-
-- Docker
-
-- Pandas
+| Technology | Purpose |
+|---|---|
+| Python | Core ETL pipeline development |
+| Pandas | Data extraction, transformation, and validation |
+| PostgreSQL | Storage for validated data |
+| SQLAlchemy and psycopg2 | PostgreSQL connection and data loading |
+| Apache Airflow | Workflow orchestration |
+| Docker and Docker Compose | Containerized pipeline deployment |
+| Pytest | Basic automated pipeline testing |
+| GitHub Actions | Continuous integration and automated test execution |
 
 ## Dataset
 
