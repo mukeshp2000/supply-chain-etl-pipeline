@@ -79,3 +79,39 @@ Airflow Orchestration
 - Containerize the pipeline with Docker
 - Add automated testing with pytest
 - Deploy Airflow using Docker Compose
+
+ ## PostgreSQL Integration
+
+The ETL pipeline writes validated data to cleaned CSV files and loads it into PostgreSQL using SQLAlchemy and psycopg2.
+
+### PostgreSQL Tables
+
+| Table | Rows |
+|---|---:|
+| customers | 750 |
+| shipments | 728 |
+| performance | 100 |
+
+### Environment Configuration
+
+Copy the example configuration:
+
+```bash
+cp .env.example .env
+```
+
+Then update `.env` with your local PostgreSQL credentials. The `.env` file is excluded from Git.
+
+### Run the Pipeline
+
+```bash
+python src/pipeline.py
+```
+
+The pipeline performs:
+
+```text
+Raw CSV → Extract → Transform → Validate → Cleaned CSV + PostgreSQL
+```
+
+The same pipeline is orchestrated through the Apache Airflow DAG.
