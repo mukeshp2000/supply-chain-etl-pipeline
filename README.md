@@ -72,13 +72,14 @@ Airflow Orchestration
 - Airflow DAG orchestration
 - Logging support
 - Modular Python architecture
-
+  
 ## Future Improvements
 
-- Load cleaned data into PostgreSQL
-- Containerize the pipeline with Docker
-- Add automated testing with pytest
-- Deploy Airflow using Docker Compose
+- Deploy the pipeline to a cloud platform such as AWS, Azure, or GCP
+- Containerize Apache Airflow using Docker Compose
+- Add incremental data loading
+- Add pipeline failure alerts and monitoring
+- Expand automated test coverage
 
  ## PostgreSQL Integration
 
