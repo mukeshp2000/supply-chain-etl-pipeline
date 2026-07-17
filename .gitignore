@@ -216,3 +216,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Virtual environment
+.venv/
+
+# Airflow files
+airflow/
+
+# Logs
+logs/*.log
+
+# macOS files
+.DS_Store
+
+# Generated outputs
+data/processed/
+data/rejected/
