@@ -147,6 +147,7 @@ python-multipart==0.0.32
 python-slugify==8.0.4
 PyYAML==6.0.3
 pyzmq==27.1.0
+psycopg2-binary==2.9.12
 referencing==0.37.0
 requests==2.34.2
 rfc3339-validator==0.1.4

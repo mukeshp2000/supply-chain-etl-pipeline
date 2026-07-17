@@ -232,3 +232,7 @@ logs/*.log
 # Generated outputs
 data/processed/
 data/rejected/
+
+.env
+
+data/raw/
