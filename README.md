@@ -32,7 +32,7 @@ Download the dataset and place the CSV files in:
 
 The ETL pipeline is orchestrated with Apache Airflow and completed successfully.
 
-![Successful Apache Airflow DAG execution](screenshots/airflow_dag_success.png)
+![Successful Apache Airflow DAG execution](https://github.com/mukeshp2000/supply-chain-etl-pipeline/blob/main/screenshots/airflow_dag_success.png?raw=true)
 
 ## Project Structure
 
