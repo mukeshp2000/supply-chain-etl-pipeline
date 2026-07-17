@@ -115,3 +115,36 @@ Raw CSV → Extract → Transform → Validate → Cleaned CSV + PostgreSQL
 ```
 
 The same pipeline is orchestrated through the Apache Airflow DAG.
+
+## Docker Deployment
+
+The ETL pipeline and PostgreSQL database can run as isolated Docker services using Docker Compose.
+
+### Services
+
+- `etl`: Builds and runs the Python ETL pipeline
+- `postgres`: Runs PostgreSQL 16 with persistent storage
+
+### Run with Docker
+
+Ensure the three source CSV files exist in `data/raw/`, then run:
+
+```bash
+docker compose up --build
+```
+
+The ETL container waits for PostgreSQL to become healthy, processes the source data, writes cleaned CSV files, and loads the three PostgreSQL tables.
+
+### Verify the Database
+
+```bash
+docker compose exec postgres psql -U etl_user -d supply_chain_db -c "\dt"
+```
+
+### Stop the Containers
+
+```bash
+docker compose down
+```
+
+PostgreSQL data is retained in the Docker named volume.
