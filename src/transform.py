@@ -2,16 +2,15 @@ import pandas as pd
 
 
 def transform_data(customers, shipments, performance):
+    column = "customs_clearance_time_days"
 
-    shipments["customs_clearance_time_days"] = pd.to_numeric(
-        shipments["customs_clearance_time_days"],
-        errors="coerce"
+    shipments[column] = pd.to_numeric(
+        shipments[column],
+        errors="coerce",
     )
 
-    shipments["customs_clearnce_time_days"]=(
-    shipments["customs_clearance_time_days"].fillna(
-        shipments["customs_clearance_time_days"].median(),
-        inplace=True
+    shipments[column] = shipments[column].fillna(
+        shipments[column].median()
     )
-    )
+
     return customers, shipments, performance
