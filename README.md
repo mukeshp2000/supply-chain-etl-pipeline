@@ -68,14 +68,18 @@ Processed Files + Rejected Records
       ↓
 Airflow Orchestration
 
-## Features
+## Testing and Continuous Integration
 
-- Automated ETL workflow
-- Data validation checks
-- Rejected records handling
-- Airflow DAG orchestration
-- Logging support
-- Modular Python architecture
+The project includes basic automated tests for core transformation and validation logic.
+
+Run the tests locally with:
+
+```bash
+pytest -q
+
+```
+
+GitHub Actions automatically installs the development dependencies and runs the test suite on every push and pull request.
   
 ## Future Improvements
 
