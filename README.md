@@ -1,5 +1,6 @@
 # supply-chain-etl-pipeline
 An automated supply chain ETL pipeline using Python, PostgreSQL, Apache Airflow and Docker.
+[![ETL CI](https://github.com/mukeshp2000/supply-chain-etl-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/mukeshp2000/supply-chain-etl-pipeline/actions/workflows/ci.yml)
 
 ## Technologies Used
 
